@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import {
     AlertTriangle,
     CheckCircle2,
@@ -95,7 +95,7 @@ export default function PreConsultWizard() {
     /* ── Step panels ─────────────────────────────── */
     const stepPanels = [
         /* 0 — Service */
-        <motion.div key="s0" custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit">
+        <motion.div key="s0" custom={direction} variants={slideVariants as any} initial="enter" animate="center" exit="exit">
             <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-5">
                 Paso 1 de 3 · ¿Qué necesita?
             </p>
@@ -127,7 +127,7 @@ export default function PreConsultWizard() {
         </motion.div>,
 
         /* 1 — Pain */
-        <motion.div key="s1" custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit">
+        <motion.div key="s1" custom={direction} variants={slideVariants as any} initial="enter" animate="center" exit="exit">
             <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-5">
                 Paso 2 de 3 · Urgencia
             </p>
@@ -158,7 +158,7 @@ export default function PreConsultWizard() {
         </motion.div>,
 
         /* 2 — Phone capture (lead magnet) */
-        <motion.div key="s2" custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit">
+        <motion.div key="s2" custom={direction} variants={slideVariants as any} initial="enter" animate="center" exit="exit">
             <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-5">
                 Paso 3 de 3 · Sus datos
             </p>
@@ -205,7 +205,7 @@ export default function PreConsultWizard() {
         </motion.div>,
 
         /* 3 — Result */
-        <motion.div key="s3" custom={direction} variants={slideVariants} initial="enter" animate="center" exit="exit">
+        <motion.div key="s3" custom={direction} variants={slideVariants as any} initial="enter" animate="center" exit="exit">
             <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-5">
                 Resultado · Su diagnóstico preliminar
             </p>
