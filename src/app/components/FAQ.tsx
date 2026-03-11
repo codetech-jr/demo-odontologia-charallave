@@ -15,7 +15,7 @@ const faqs = [
     },
     {
         q: "¿Atienden emergencias dentales los fines de semana?",
-        a: "Sí. Contamos con atención de urgencias de lunes a sábado de 8:00 AM a 5:00 PM. Para emergencias, simplemente escríbanos por WhatsApp al +58 424-123-4567 y le damos prioridad de atención el mismo día. Entendemos que un dolor de muela no espera al lunes.",
+        a: "Sí. Contamos con atención de urgencias de lunes a sábado de 8:00 AM a 5:00 PM. Para emergencias, simplemente escríbanos por WhatsApp al +58 424-141-9780 y le damos prioridad de atención el mismo día. Entendemos que un dolor de muela no espera al lunes.",
     },
     {
         q: "¿Aceptan divisas en efectivo para abonar citas?",
@@ -61,8 +61,8 @@ export default function FAQ() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.4, delay: idx * 0.06 }}
                                 className={`rounded-2xl border overflow-hidden transition-all duration-300 ${isOpen
-                                        ? "border-[#00A3AD]/40 shadow-lg shadow-[#00A3AD]/8"
-                                        : "border-slate-200 bg-white hover:border-slate-300"
+                                    ? "border-[#00A3AD]/40 shadow-lg shadow-[#00A3AD]/8"
+                                    : "border-slate-200 bg-white hover:border-slate-300"
                                     }`}
                             >
                                 <button

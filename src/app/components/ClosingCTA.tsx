@@ -51,7 +51,7 @@ export default function ClosingCTA() {
 
                 {/* CTA Button */}
                 <motion.a
-                    href="https://wa.me/584241234567?text=Hola!%20Quisiera%20aprovechar%20la%20evaluaci%C3%B3n%20gratuita%20con%20diagn%C3%B3stico.%20%C2%BFTienen%20cupo%20esta%20semana%3F"
+                    href="https://wa.me/584241419780?text=Hola!%20Quisiera%20aprovechar%20la%20evaluaci%C3%B3n%20gratuita%20con%20diagn%C3%B3stico.%20%C2%BFTienen%20cupo%20esta%20semana%3F"
                     target="_blank"
                     rel="noopener noreferrer"
                     initial={{ opacity: 0, y: 24 }}

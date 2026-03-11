@@ -13,9 +13,10 @@ import {
     ShieldCheck,
     FileText,
 } from "lucide-react";
+import Image from "next/image";
 
 const contact = [
-    { icon: Phone, label: "+58 424-123-4567", href: "tel:+584241234567" },
+    { icon: Phone, label: "+58 424-141-9780", href: "tel:+584241419780" },
     { icon: Mail, label: "consultas@odontopremium.ve", href: "mailto:consultas@odontopremium.ve" },
     {
         icon: MapPin,
@@ -37,7 +38,7 @@ const services = [
 const social = [
     { icon: Instagram, label: "Instagram", href: "https://instagram.com", color: "hover:text-pink-400" },
     { icon: Facebook, label: "Facebook", href: "https://facebook.com", color: "hover:text-blue-400" },
-    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/584241234567", color: "hover:text-emerald-400" },
+    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/584241419780", color: "hover:text-emerald-400" },
 ];
 
 const legal = [
@@ -79,12 +80,17 @@ export default function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
                     {/* Brand */}
                     <div className="lg:col-span-1">
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="w-9 h-9 bg-gradient-to-br from-[#00A3AD] to-cyan-400 rounded-xl flex items-center justify-center">
-                                <span className="text-white font-extrabold text-xs">OD</span>
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="w-12 h-12 relative flex-shrink-0 rounded-full overflow-hidden shadow-lg shadow-[#00A3AD]/20 border border-white/10 bg-[#0F172A]">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Smile Dent GM Logo"
+                                    fill
+                                    className="object-contain p-0.5"
+                                />
                             </div>
                             <span className="font-[family-name:var(--font-jakarta)] font-bold text-white text-base">
-                                Odontología Premium
+                                Smile Dent GM
                             </span>
                         </div>
                         <p className="text-sm leading-relaxed mb-5">
@@ -190,7 +196,7 @@ export default function Footer() {
                 {/* Bottom bar */}
                 <div className="border-t border-white/8 mt-12 pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                     <p>
-                        © {new Date().getFullYear()} Odontología Premium Charallave. Todos los derechos
+                        © {new Date().getFullYear()} Smile Dent GM Charallave. Todos los derechos
                         reservados.
                     </p>
                     <p className="flex items-center gap-1">

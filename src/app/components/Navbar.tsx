@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
     { label: "Servicios", href: "#servicios" },
@@ -26,19 +27,25 @@ export default function Navbar() {
         <>
             <header
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                        ? "bg-[#0F172A]/95 backdrop-blur-md shadow-xl shadow-black/20 border-b border-white/5"
-                        : "bg-transparent"
+                    ? "bg-[#0F172A]/95 backdrop-blur-md shadow-xl shadow-black/20 border-b border-white/5"
+                    : "bg-transparent"
                     }`}
             >
                 <nav className="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-6">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-2.5 shrink-0">
-                        <div className="w-8 h-8 bg-gradient-to-br from-[#00A3AD] to-cyan-400 rounded-lg flex items-center justify-center shadow-lg shadow-[#00A3AD]/30">
-                            <span className="text-white font-extrabold text-xs tracking-tight">OD</span>
+                    <a href="#" className="flex items-center gap-2.5 shrink-0 group">
+                        <div className="w-10 h-10 relative flex-shrink-0 rounded-full overflow-hidden shadow-lg shadow-[#00A3AD]/20 border border-white/10 group-hover:scale-105 transition-transform duration-300 bg-[#0F172A]">
+                            <Image
+                                src="/logo.png"
+                                alt="Smile Dent GM Logo"
+                                fill
+                                className="object-contain p-0.5"
+                                priority
+                            />
                         </div>
                         <span className="font-[family-name:var(--font-jakarta)] font-bold text-white text-base hidden sm:block leading-tight">
-                            Odontología<br />
-                            <span className="text-[#00A3AD] text-xs font-semibold">Premium Charallave</span>
+                            Smile Dent GM<br />
+                            <span className="text-[#00A3AD] text-xs font-semibold">Charallave</span>
                         </span>
                     </a>
 
@@ -59,7 +66,7 @@ export default function Navbar() {
                     {/* Right CTA */}
                     <div className="flex items-center gap-3">
                         <motion.a
-                            href="https://wa.me/584241234567?text=Hola!%20Quisiera%20agendar%20una%20cita."
+                            href="https://wa.me/584241419780?text=Hola!%20Quisiera%20agendar%20una%20cita."
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.04 }}
@@ -107,7 +114,7 @@ export default function Navbar() {
                             ))}
                             <li className="pt-2 border-t border-white/10 mt-2">
                                 <a
-                                    href="https://wa.me/584241234567?text=Hola!%20Quisiera%20agendar%20una%20cita."
+                                    href="https://wa.me/584241419780?text=Hola!%20Quisiera%20agendar%20una%20cita."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     onClick={() => setMobileOpen(false)}

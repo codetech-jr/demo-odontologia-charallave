@@ -10,7 +10,7 @@ const actions = [
         title: "Agendar Evaluación",
         description: "Consulta gratuita con nuestro especialista. Respuesta en minutos.",
         cta: "Escribir por WhatsApp",
-        href: "https://wa.me/584241234567?text=Hola!%20Quisiera%20agendar%20una%20evaluaci%C3%B3n%20en%20el%20consultorio.",
+        href: "https://wa.me/584241419780?text=Hola!%20Quisiera%20agendar%20una%20evaluaci%C3%B3n%20en%20el%20consultorio.",
         gradient: "from-emerald-500 to-[#00A3AD]",
         iconBg: "bg-emerald-500/10 text-emerald-500",
         badge: "Responde en < 5 min",

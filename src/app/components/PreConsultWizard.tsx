@@ -80,7 +80,7 @@ export default function PreConsultWizard() {
 
     /* Build WhatsApp link dynamically */
     const buildWhatsAppLink = () => {
-        const phone = "584241234567";
+        const phone = "584241419780";
         const painText = state.hasPain === "Sí" ? "y tengo dolor en este momento" : "sin dolor actual";
         const phoneInfo = state.phone ? ` Mi número de contacto es: ${state.phone}.` : "";
         const message = encodeURIComponent(
@@ -173,7 +173,7 @@ export default function PreConsultWizard() {
                 <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={17} />
                 <input
                     type="tel"
-                    placeholder="Ej: 0424-123-4567"
+                    placeholder="Ej: 0424-141-9780"
                     value={state.phone}
                     onChange={(e) => setState((p) => ({ ...p, phone: e.target.value }))}
                     className="w-full bg-white/8 border-2 border-white/15 focus:border-[#00A3AD] rounded-xl pl-11 pr-4 py-4 text-white placeholder-slate-500 text-sm outline-none transition-colors duration-200"

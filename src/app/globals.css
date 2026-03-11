@@ -3,7 +3,7 @@
 @theme {
   --color-primary: #0F172A;
   --color-secondary: #00A3AD;
-  --color-accent: #D4AF37;
+  --color-accent: #EAB308;
   --color-background: #F8FAFC;
   --color-surface: #FFFFFF;
 }
@@ -20,9 +20,11 @@ body {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #F8FAFC;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #00A3AD;
   border-radius: 3px;

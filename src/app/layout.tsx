@@ -17,20 +17,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Odontología Premium en Charallave | Ortodoncia y Estética Dental",
+  title: "Smile Dent GM | Odontología en Charallave",
   description:
-    "Consultorio odontológico de alta especialidad en Charallave, Valles del Tuy. Ortodoncia, diseño de sonrisa, implantes y limpiezas. Aceptamos Cashea — pague en cuotas sin interés.",
+    "Consultorio odontológico Smile Dent GM en Charallave. Ortodoncia, prótesis, extracciones, restauraciones y limpieza. Aceptamos Cashea.",
   keywords: [
+    "smile dent gm",
     "odontología charallave",
-    "ortodoncia valles del tuy",
-    "diseño de sonrisa",
+    "ortodoncia smile dent",
     "dentista charallave",
     "cashea odontología",
   ],
   openGraph: {
-    title: "Odontología Premium en Charallave | Ortodoncia y Estética Dental",
+    title: "Smile Dent GM | Odontología General y Ortodoncia",
     description:
-      "Especialistas en ortodoncia y estética dental en Charallave. Agenda tu evaluación gratuita hoy.",
+      "Especialistas en odontología general, ortodoncia y prótesis en Charallave. ¡Agenda tu cita hoy!",
     type: "website",
   },
 };
